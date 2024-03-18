@@ -165,6 +165,181 @@
             <!-- Content -->
             <main class="col-md-8 col-lg-10">
 
+                <!-- Container -->
+                <div class="container-fluid pt-5">
+
+                    <!-- Rows -->
+                    <div class="row row-cols-1 row-cols-lg-2 gy-2">
+
+                        <!-- Top -->
+                        <div class="col-12 col-lg-12 text-center">
+                            <div class="container">
+                                <h3 class="mb-3 fw-bold fs-2">Crea un nuovo prodotto</h3>
+                                <p>
+                                    I campi contrassegnati con un asterisco (*) sono
+                                    obbligatori. Le immagini devono essere in formato PNG e non
+                                    devono superare i 4 MB di dimensione
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Top -->
+
+                        <!-- Col left -->
+                        <div class="col">
+                            <form>
+                                <div class="pb-3">
+                                    <label for="prod_name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="prod_name"
+                                        placeholder="Samsung Galaxy 10 Plus" />
+                                </div>
+
+                                <div class="pb-3">
+                                    <label for="prod_price" class="form-label">Prezzo</label>
+                                    <input type="tel" class="form-control" id="prod_price" placeholder="99.00" />
+                                </div>
+
+                                <label for="prod_brand" class="form-label">Marca</label>
+
+                                <select class="form-select pb-3 mb-2">
+                                    <option selected>--- Seleziona ---</option>
+                                    <option value="1">Samsung</option>
+                                    <option value="2">Pixel</option>
+                                    <option value="3">Apple</option>
+                                    <option value="4">Others</option>
+                                </select>
+
+
+
+                                <textarea class="form-control pb-5 mb-2"
+                                    placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                                    id="prod_description"></textarea>
+
+
+
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                                </div>
+
+
+
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked />
+                                    <label class="btn btn-outline-secondary p-1" for="btnradio1">Disponibile</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off" />
+                                    <label class="btn btn-outline-secondary p-1" for="btnradio2">Esaurito</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                        autocomplete="off" />
+                                    <label class="btn btn-outline-secondary p-1" for="btnradio3">Fuori
+                                        produzione</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4"
+                                        autocomplete="off" />
+                                    <label class="btn btn-outline-secondary p-1" for="btnradio4">In arrivo</label>
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <!-- /Col left -->
+
+                        <!-- Col right -->                        
+                        <div class="col">
+
+                            <div class="d-flex py-2 px-3 border border-1 border-bottom-0 rounded-top">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>fotocamera principale</span>
+                                    <p class="text-secondary m-0">
+                                        foto di alta qualità e registrare video nitidi
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex py-2 px-3 border border-1 border-bottom-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>schermo OLED</span>
+                                    <p class="text-secondary m-0">
+                                        offre colori vividi per un esperienza straordinaria.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex py-2 px-3 border border-1 border-bottom-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>processore Octa-core</span>
+                                    <p class="text-secondary m-0">
+                                        prestazioni fluide e veloci per eseguire le applicazioni
+                                        più esigenti
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex py-2 px-3 border border-1 border-bottom-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>ricarica wireless</span>
+                                    <p class="text-secondary m-0">
+                                        consente di ricaricare lo smartphone comodamente senza
+                                        l'uso di cavi
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="d-flex py-2 px-3 border border-1 border-bottom-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>connessione 5G</span>
+                                    <p class="text-secondary m-0">
+                                        navigazione ultra veloce e streaming senza interruzioni
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="d-flex py-2 px-3 border border-1 rounded-bottom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" />
+                                </div>
+                                <div>
+                                    <span>tecnologia NFC</span>
+                                    <p class="text-secondary m-0">
+                                        per effetuare pagamenti senza contatto
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /Col right -->
+
+                    </div>
+                    <!-- /Rows -->
+
+                    <button type="button" class="btn btn-primary mt-3">Salva</button>
+                </div>
+                <!-- /Container -->
+
             </main>
             <!-- /Content -->
         </div>
